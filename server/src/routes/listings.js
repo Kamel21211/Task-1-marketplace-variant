@@ -13,7 +13,7 @@ const router = express.Router();
 router.post("/", createListing);
 router.get("/", getAllListings);
 router.get("/:id", getListing);
-router.put("/:id", updateListing);
+router.patch("/:id", updateListing);
 router.delete("/:id", deleteListing); // Triggers the soft-delete
 router.patch("/:id/sold", markAsSold); // Stretch goal
 
